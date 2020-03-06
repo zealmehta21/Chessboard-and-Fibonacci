@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title> Fibonacci Series</title></head>
+<body>
+	<script type="text/javascript">
+	
+	var a=0,b=1;
+	var answer;
+	
+	var no=prompt("Enter the limit to generate fibonacci number:");
+	document.write("Fibonacci Series: <br/>");
+	
+	document.write(a+"<br/>");
+	document.write(b+"<br/>");
+	
+	for(var i=3;i<=no;i++)
+	{
+		answer=a+b;
+		a=b;
+		b=answer;
+		
+		document.write(answer+"<br/>");
+	}
+	</script>
+	<noscript>
+	<p> you have javascript turned off </p>
+	</noscript>
+</body>
+</html>
